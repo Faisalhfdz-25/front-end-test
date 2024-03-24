@@ -1,4 +1,4 @@
-// ArticleList.tsx
+
 import React, { useState, useEffect } from 'react';
 import { List, Card, Skeleton } from 'antd';
 import NewsService from '../services/NewsService';
@@ -20,7 +20,7 @@ const ArticleList: React.FC = () => {
   }, []);
 
   const openArticleUrl = (url: string) => {
-    window.open(url, '_blank'); // Open article URL in a new browser tab
+    window.open(url, '_blank'); 
   };
 
   return (
@@ -35,8 +35,8 @@ const ArticleList: React.FC = () => {
               title={article.title}
               style={{ width: 300, }}
               hoverable // Add hover effect to card
-              cover={<img alt={article.title} src={article.imageUrl || 'https://via.placeholder.com/300'} />} // Use cover prop to display image
-              onClick={() => openArticleUrl(article.url)} // Call openArticleUrl function on card click
+              cover={<img alt={article.title} src={article.imageUrl || 'https://via.placeholder.com/300'} />} 
+              onClick={() => openArticleUrl(article.url)} 
             >
               <p>{article.description}</p>
             </Card>

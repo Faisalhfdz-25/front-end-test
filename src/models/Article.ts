@@ -1,4 +1,4 @@
-// Article.ts
+
 interface Article {
     id: string;
     title: string;
@@ -8,7 +8,7 @@ interface Article {
     publishedAt: string;
     
     url: string;
-    imageUrl: string; // Ensure imageUrl property is correctly defined
+    imageUrl: string; 
   }
   
 

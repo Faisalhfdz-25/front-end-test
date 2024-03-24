@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  
 }
 
 .App-logo {
@@ -15,6 +16,8 @@
 }
 
 .App-header {
+  padding: 0%;
+  margin: 0;
   background-color: #282c34;
   height: 300px;
   display: flex;
@@ -40,6 +43,9 @@
   color: white;
 }
 
+.svg-background {
+  flex-grow: 1;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
